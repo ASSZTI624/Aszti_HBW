@@ -1,0 +1,27 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/asztiweb/public_html/
+    # Deploy core PHP files
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp about.php $DEPLOYPATH
+    - /bin/cp bookings.php $DEPLOYPATH
+    - /bin/cp confirm_booking.php $DEPLOYPATH
+    - /bin/cp contact.php $DEPLOYPATH
+    - /bin/cp email_confirm.php $DEPLOYPATH
+    - /bin/cp facilities.php $DEPLOYPATH
+    - /bin/cp generate_pdf.php $DEPLOYPATH
+    - /bin/cp logout.php $DEPLOYPATH
+    - /bin/cp pay_now.php $DEPLOYPATH
+    - /bin/cp pay_response.php $DEPLOYPATH
+    - /bin/cp pay_status.php $DEPLOYPATH
+    - /bin/cp profile.php $DEPLOYPATH
+    - /bin/cp room_details.php $DEPLOYPATH
+    - /bin/cp rooms.php $DEPLOYPATH
+    # Deploy directories
+    - /bin/cp -R admin $DEPLOYPATH/admin
+    - /bin/cp -R ajax $DEPLOYPATH/ajax
+    - /bin/cp -R css $DEPLOYPATH/css
+    - /bin/cp -R images $DEPLOYPATH/images
+    # Deploy includes
+    - /bin/cp -R inc $DEPLOYPATH/inc
