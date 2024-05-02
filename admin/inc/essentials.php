@@ -21,9 +21,9 @@
 
   // sendgrid api key
 
-  define('SENDGRID_API_KEY',"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");
-  define('SENDGRID_EMAIL',"asztalostamas8@gmail.com");
-  define('SENDGRID_NAME',"Aszti website");
+  define('SENDGRID_API_KEY',"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");
+  define('SENDGRID_EMAIL',"asztalostamas8888@gmail.com");
+  define('SENDGRID_NAME',"ASZTIAPI4");
 
   // Possible "booking status" values in db = pending, booked, payment failed, cancelled
   

@@ -131,7 +131,7 @@
         alert('error',"Registration failed! Server down!");
       }
       else{
-        alert('success',"Registration successful. Confirmation link sent to email!");
+        alert('success',"Registration successful. Confirmation email sent.");
         register_form.reset();
       }
     }

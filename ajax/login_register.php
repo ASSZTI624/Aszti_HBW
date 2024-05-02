@@ -103,12 +103,12 @@
 
     // --->>> COMMENT these lines if you are using email verification
 
+/*   
    
-   /*
     $query = "INSERT INTO `user_cred`(`name`, `email`, `address`, `phonenum`, `pincode`, `dob`,`profile`, `password`, `is_verified`) VALUES (?,?,?,?,?,?,?,?,?)";
     $values = [$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],$data['dob'],$img,$enc_pass,'1'];
-  */
   
+*/  
 
     if(insert($query,$values,'sssssssss')){
       echo 1;
