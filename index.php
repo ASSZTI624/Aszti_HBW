@@ -38,7 +38,7 @@
             $path = CAROUSEL_IMG_PATH;
             echo <<<data
               <div class="swiper-slide">
-                <img src="$path$row[image]" class="w-100 d-block">
+                <img src="{$path}{$row['image']}" class="w-100 d-block">
               </div>
             data;
           }
@@ -240,10 +240,10 @@
         $path = FACILITIES_IMG_PATH;
 
         while($row = mysqli_fetch_assoc($res)){
-          echo<<<data
+          echo <<<data
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-              <img src="$path$row[icon]" width="60px">
-              <h5 class="mt-3">$row[name]</h5>
+              <img src="{$path}{$row['icon']}" width="60px">
+              <h5 class="mt-3">{$row['name']}</h5>
             </div>
           data;
         }
@@ -284,14 +284,14 @@
                 $stars .= " <i class='bi bi-star-fill text-warning'></i>";
               }
 
-              echo<<<slides
+              echo <<<slides
                 <div class="swiper-slide bg-white p-4">
                   <div class="profile d-flex align-items-center mb-3">
-                    <img src="$img_path$row[profile]" class="rounded-circle" loading="lazy" width="30px">
-                    <h6 class="m-0 ms-2">$row[uname]</h6>
+                    <img src="{$img_path}{$row['profile']}" class="rounded-circle" loading="lazy" width="30px">
+                    <h6 class="m-0 ms-2">{$row['uname']}</h6>
                   </div>
                   <p>
-                    $row[review]
+                    {$row['review']}
                   </p>
                   <div class="rating">
                     $stars
